@@ -19,7 +19,7 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <Link to="/menu">
-        <div className={classes.logo}>D' cafe</div>
+        <div className={classes.logo}>☕ D' cafe</div>
       </Link>
       <ul>
         {isLoggedIn && (
