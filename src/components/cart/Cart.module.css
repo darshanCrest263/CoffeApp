@@ -1,0 +1,37 @@
+.container {
+  padding: 1rem;
+  margin: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+}
+
+.container h5 {
+  text-align: center;
+}
+
+.container hr {
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.container .actions {
+  display: flex;
+  justify-content: right;
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.tableContainer table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.tableContainer th {
+  padding: 8px;
+  text-align: justify;
+  border-bottom: 5px dashed #ddd;
+}
