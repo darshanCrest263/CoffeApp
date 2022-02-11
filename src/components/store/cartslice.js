@@ -10,6 +10,9 @@ const cartSlice = createSlice({
   reducers: {
     cancelOneItem(state, action) {
       const id = action.payload;
+      const cancelledItem = state.items.find((item) => item.id === id);
+      state.totalQuantity -= cancelledItem.qty;
+      state.totalAmount -= cancelledItem.qty * cancelledItem.price;
       state.items = state.items.filter((item) => item.id !== id);
     },
     cancelAllOrderItems(state) {
