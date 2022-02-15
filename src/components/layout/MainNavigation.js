@@ -13,6 +13,7 @@ function MainNavigation() {
   const logOutHandler = () => {
     dispatch(authActions.logout());
     dispatch(orderActions.clearData());
+    dispatch(cartActions.cancelAllOrderItems());
     localStorage.removeItem("uid");
     localStorage.removeItem("idToken");
   };
