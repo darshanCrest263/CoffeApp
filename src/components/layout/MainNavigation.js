@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import React from "react";
 import { authActions } from "../store/authslice";
 import { orderActions } from "../store/orderSlice";
+import { cartActions } from "../store/cartslice";
 
 function MainNavigation() {
   const dispatch = useDispatch();
